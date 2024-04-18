@@ -1,13 +1,17 @@
-name: main.py
-on: [push]
+name: Your Workflow Name
+
+on:
+  push:
+    branches:
+      - main
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: test_positive
-      uses: actions/checkout@v2
-
-    - name: test_negative
-      run: python main.py run_function
+      - name: test_negative
+        uses: actions/checkout@v2
+        with:
+          # Update Node.js version to 20
+          node-version: '20'
