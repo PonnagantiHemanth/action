@@ -1,11 +1,8 @@
 # test_config.yaml
-tests:
-  - name: "Test positive addition"
-    script: "main.py"
-    args:
-      - "TestAddition.test_positive"
-
-  - name: "Test negative addition"
-    script: "main.py"
-    args:
-      - "TestAddition.test_negative"
+pytest:
+  on:
+    - event: run_tests
+      script: "main.py"
+      args:
+        - "TestAddition.test_positive"
+        - "TestAddition.test_negative"
