@@ -1,2 +1,11 @@
-name: run main.py::multiplication
+# test_config.yaml
+tests:
+  - name: "Test positive addition"
+    script: "main.py"
+    args:
+      - "TestAddition.test_positive"
 
+  - name: "Test negative addition"
+    script: "main.py"
+    args:
+      - "TestAddition.test_negative"
