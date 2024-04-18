@@ -6,12 +6,12 @@ on:
       - main
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: test_positi
+      - name: test_positive
         uses: actions/checkout@v2
-        with:
-          # Update Node.js version to 20
-          node-version: '20'
+
+      - name: test_positive
+        run: python main.py
