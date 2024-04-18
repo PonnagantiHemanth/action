@@ -10,7 +10,7 @@ class TestAddition(unittest.TestCase):
 
     def test_negative(self):
         result = addition(-5, -6)
-        self.assertEqual(result, -200)
+        self.assertEqual(result, -11)
 
 if __name__ == '__main__':
     unittest.main()
