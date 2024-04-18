@@ -1,4 +1,5 @@
 # test_config.yaml
+name: main.py
 pytest:
   on:
     - event: run_tests
