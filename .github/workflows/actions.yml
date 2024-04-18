@@ -1,4 +1,4 @@
-name: Run test_positive function
+name: Run test_negative function
 
 on:
   push:
@@ -13,5 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run test_positive function
-        run: python main.py TestAddition.test_positive
+      - name: Run test_negative function
+        run: python main.py TestAddition.test_negative
