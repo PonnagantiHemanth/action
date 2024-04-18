@@ -13,5 +13,5 @@ jobs:
       - name: test_positive
         uses: actions/checkout@v2
 
-      - name: test_positive
+      - name: test_positi
         run: python main.py
