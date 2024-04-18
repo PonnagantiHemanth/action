@@ -1,7 +1,13 @@
-# test_config.yaml
 name: main.py
-pytest:
-  scripts:
-    main:
-      - "TestAddition.test_positive"
-      - "TestAddition.test_negative"
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: test_positive
+      uses: actions/checkout@v2
+
+    - name: test_negative
+      run: python main.py run_function
