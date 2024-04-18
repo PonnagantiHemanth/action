@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: test_positive
+      - name: test_positi
         uses: actions/checkout@v2
         with:
           # Update Node.js version to 20
