@@ -1,6 +1,10 @@
 name: Run test_negative function
 
 on:
+  workflow_dispatch:
+    inputs:
+      BRANCH_NAME:
+        description: target branch name
   push:
     branches:
       - main
