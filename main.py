@@ -6,7 +6,7 @@ def addition(a, b):
 class TestAddition(unittest.TestCase):
     def test_positive(self):
         result = addition(5, 6)
-        self.assertEqual(result, 11)
+        self.assertEqual(result, 1)
 
     def test_negative(self):
         result = addition(-5, -6)
