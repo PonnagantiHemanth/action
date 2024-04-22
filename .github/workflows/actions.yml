@@ -13,5 +13,5 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Run test_negativ function
-        run: python main.py TestAddition.test_negativ
+      - name: Run test_negative function
+        run: python main.py TestAddition.test_negative
