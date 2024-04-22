@@ -1,5 +1,5 @@
 name: Run test_negative function
-
+name: Run test_positive function
 on:
   workflow_dispatch:
     inputs:
