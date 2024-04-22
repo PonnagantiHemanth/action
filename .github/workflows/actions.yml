@@ -3,8 +3,9 @@ name: Run test_negative function
 on:
   workflow_dispatch:
     inputs:
-      BRANCH_NAME:
+      TEST_FILTER:
         description: target branch name
+        default: 'TestAddition.test_negative'
   push:
     branches:
       - main
@@ -18,4 +19,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run test_negative function
-        run: python main.py TestAddition.test_negative
+        run: python main.py ${{inputs.TEST_FILTER}}
