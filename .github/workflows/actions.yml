@@ -5,7 +5,7 @@ on:
     inputs:
       TEST_FILTER:
         description: target branch name
-        default: 'TestAddition.test_negative'
+        default: python main.py ${{inputs.TEST_FILTER}}
   push:
     branches:
       - main
