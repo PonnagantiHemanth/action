@@ -1,4 +1,4 @@
-name: python main.py ${{inputs.TEST_FILTER}}
+name: Run test_negative function
 
 on:
   workflow_dispatch:
